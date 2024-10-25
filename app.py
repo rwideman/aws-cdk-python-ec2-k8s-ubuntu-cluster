@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from aws_ec2_k8s_ubuntu_cluster.aws_ec2_k8s_ubuntu_cluster_stack import AwsEc2K8SUbuntuClusterStack
+from aws_cdk_python_ec2_k8s_ubuntu_cluster.aws_cdk_python_ec2_k8s_ubuntu_cluster_stack import AwsCdkPythonEc2K8SUbuntuClusterStack
 
 
 app = cdk.App()
-AwsEc2K8SUbuntuClusterStack(app, "AwsEc2K8SUbuntuClusterStack",
+AwsCdkPythonEc2K8SUbuntuClusterStack(app, "AwsCdkPythonEc2K8SUbuntuClusterStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.

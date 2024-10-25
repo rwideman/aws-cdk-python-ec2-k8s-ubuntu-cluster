@@ -5,7 +5,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-class AwsEc2K8SUbuntuClusterStack(Stack):
+class AwsCdkPythonEc2K8SUbuntuClusterStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
@@ -14,6 +14,6 @@ class AwsEc2K8SUbuntuClusterStack(Stack):
 
         # example resource
         # queue = sqs.Queue(
-        #     self, "AwsEc2K8SUbuntuClusterQueue",
+        #     self, "AwsCdkPythonEc2K8SUbuntuClusterQueue",
         #     visibility_timeout=Duration.seconds(300),
         # )
